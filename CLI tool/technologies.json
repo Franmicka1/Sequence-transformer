@@ -1,0 +1,33 @@
+{
+  "technologies": {
+    "PacBio": {
+      "error_profile": {"substitution": 0.01, "insertion": 0.09, "deletion": 0.04},
+      "error_distribution": "normal",
+	  "error_mean": 0.1,
+	  "error_std_dev": 0.05,
+      "read_length_distribution": "lognormal",
+	  "read_mean": 8.5,
+	  "read_stddev": 0.75,
+    "quality_mean": 12,
+    "quality_stddev": 4
+    },
+    "ONT": {
+      "error_profile": {"substitution": 0.005, "insertion": 0.04, "deletion": 0.005},
+      "error_distribution": "normal",
+	  "error_mean": 0.1,
+	  "error_std_dev": 0.05,
+      "read_length_distribution": "exponential",
+	  "read_mean": 11000,
+    "quality_mean": 17,
+    "quality_stddev": 2  
+    },
+    "Illumina": {
+      "error_profile": {"substitution": 0.01, "insertion": 0.001, "deletion": 0.001},
+      "error_distribution": "uniform",
+      "read_length_distribution": "fixed",
+    "read_length": 250,
+    "quality_mean": 37,
+    "quality_stddev": 2  
+    }
+  }
+}
